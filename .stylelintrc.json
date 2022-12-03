@@ -1,0 +1,9 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "plugins": [
+    "stylelint-declaration-use-variable"
+  ],
+  "rules": {
+    "sh-waqar/declaration-use-variable": [["/color/", "z-index", "font-size"]]
+  }
+}
