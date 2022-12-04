@@ -1,4 +1,7 @@
 @font-face {
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
   font-family: PixelFont;
   src: local("PixelFont"), url("./assets/fonts/DotGothic16-Regular.ttf") format("truetype");
 }

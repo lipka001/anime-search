@@ -1,0 +1,9 @@
+@import "../../styles";
+
+.link {
+  $root: &;
+
+  color: $color-white;
+  text-decoration: inherit;
+  font-size: $font-size-large;
+}

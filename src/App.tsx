@@ -1,12 +1,18 @@
 import React, { FC } from "react";
 import "./app.scss";
 
-import Page from "./сomponents/Page";
+import { BrowserRouter } from "react-router-dom";
+import RouterConfig from "./navigation/RouterConfig";
+import Layout from "./components/Layout";
 
 const App: FC = () => {
   return (
     <div className="app">
-      <Page className="page"/>
+      <BrowserRouter>
+        <Layout>
+          <RouterConfig/>
+        </Layout>
+      </BrowserRouter>
     </div>
   );
 };

@@ -1,0 +1,65 @@
+@import "../../styles";
+
+.header {
+  $root: &;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  box-sizing: border-box;
+  padding: 20px 40px;
+  background: rgba($color-black, 0.6);
+  box-shadow: 0 30px 14px rgba($color-black, 0.6);
+
+  &__icon {
+    box-sizing: border-box;
+    font-size: $font-size-logo;
+  }
+
+  &__text {
+    transition: text-shadow 0.5s ease;
+  }
+
+  &__text-shadow {
+    transition: text-shadow 0.5s ease;
+    text-shadow: 5px 0 0 $color-purple;
+  }
+
+  &__link-telegram {
+    display: block;
+    height: 30px;
+    width: 40px;
+    background-image: url("../../assets/icons/telegram.svg");
+  }
+
+  &__link,
+  &__link-telegram {
+    &:hover {
+      border-bottom: 2px solid $color-white;
+
+      #{$root}__text-shadow {
+        text-shadow: none;
+      }
+
+      #{$root}__text {
+        text-shadow: 5px 0 0 $color-purple;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__item:first-child {
+    justify-content: start;
+  }
+
+  &__item:last-child {
+    justify-content: end;
+  }
+}
