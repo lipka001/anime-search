@@ -1,11 +1,10 @@
-import { setup } from "bem-cn";
-
+import { withNaming } from "@bem-react/classname";
 // TODO: разобраться с неймингом
 
-const blockname = (blockName: string) => setup({
-  el: "__",
-  mod: "--",
-  modValue: "-"
-}).toString();
+const blockname = withNaming({
+  e: "__",
+  m: "--",
+  v: "-"
+});
 
 export default blockname;
